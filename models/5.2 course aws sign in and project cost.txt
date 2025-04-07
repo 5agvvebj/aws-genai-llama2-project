@@ -1,0 +1,63 @@
+Launch the AWS Web Console
+In this course, Udacity offers you a federated user account, a temporary AWS user account with limited permissions. We call it a Cloud Lab. You can use the Cloud Lab for educational purposes only.
+
+Before you begin, be sure to log out of any AWS accounts you may already have running. Next, click on the Cloud Resources tab to generate the temporary AWS credentials (access keys). You can click on the Open Cloud Console button to go to the AWS console. Review the screenshot below for guidance.
+
+Ensure that you do not have a pop-up blocker installed; it may prevent the new tab from launching. Please be sure to allow pop-ups from Udacity.
+
+Click on the Cloud Resources tab to generate the temporary AWS credentials (access keys). You can click on the Open Cloud Console button to go to the AWS console.
+
+AWS Account Restrictions
+1. Session Limit
+Note that there is a certain session time limit. If reached, you will automatically be timed out. As long as you have not used your entire allocated budget, your work will be saved. You can re-launch using the same "Launch Cloud Gateway" button in the left navigation menu to return to your session.
+
+2. Default AWS Region
+The default AWS region for you will be US East (N. Virginia) (us-east-1 ). In case you need more than one region for your work you can use
+
+us-east-2
+us-west-1
+us-west-2
+Note: You will not have permissions to access regions other than abovementioned ones.
+
+3. Budget
+All AWS services are a pay-as-you-go service. Udacity has set a budget for each student to complete their course work. Please understand that these credits are limited and available for you to use judiciously. The budget for this entire course is $25. Although, we find about $10 sufficient for most to complete this course.
+
+If you hit your budget, your session will time out and your work will be lost and unrecoverable.
+
+4. No Extra Credits
+We recommend you shut down/delete every AWS resource (e.g., EC2, Sagemaker, Database, EMR, CloudFormation) immediately after the usage or if you are stepping away for a few hours. Otherwise, you will run out of your allocated budget.
+
+Udacity will not provide additional credits. In case you exhaust your credits:
+
+You will lose your progress on the AWS console.
+
+You will have to use your personal AWS account to finish the remaining course/program.
+
+Specifically, any service available to you @$0.1/hour or higher should be monitored closely and shut down immediately after use or if you are stepping away. Otherwise, most likely you will exhaust your credits before finishing the course.
+
+To better understand pricing, see the AWS Pricing(Check the pricing at https://aws.amazon.com/pricing/(op
+5. Track your Usage
+You need to make sure that you have an adequate budget available to complete your project/task. You can track your usage on the AWS web console, navigate to Billing and Cost Management > AWS Cost Explorer, and view the spending by selecting a date range. The starting date should be your date of enrollment in this course or program.
+
+You can view the AWS Cost Explorer dashboard. However, we have disabled the Billing dashboard for security and privacy reasons.
+
+6. Service Restrictions
+You are given a temporary AWS account with limited permissions. You can only use the AWS services required for the course exercises and the projects.
+
+7. Concurrency Limits
+A strict limit exists on the number of concurrent (or parallel) instances and resources you can create at any given time. This policy applies to a wide range of AWS services, including EC2, CodeBuild, SageMaker, Lambda, Redshift, Bedrock, Rekognition, Glue, Fargate, and EKS.
+
+The limits set for these services are significantly higher than what is necessary to complete classroom exercises and projects. The exact limits vary by service and may change over time without prior notice.
+
+Consequences of Exceeding Limits: Exceeding these concurrency limits will result in the deactivation of your account and the loss of your cloud lab resources.
+
+Recommendation: Keep your AWS account clean and regularly delete unnecessary resources to avoid hitting the limits. Adhering to these guidelines will ensure uninterrupted access to your AWS resources.
+
+Support: To gain deeper insights into managing AWS credits and concurrency limits effectively, explore the AWS Cloud Lab Best Practices(opens in a new tab) article. Should you encounter further challenges, please contact Udacity Support via our Help Center for additional assistance.
+
+8. Personal Information in AWS
+Do not add any type of personal information to the AWS account and resources provided by Udacity for this course. This includes: email addresses, resource names, tags, phone number, name, etc.
+
+9. Account Deletion
+Udacity will delete all resources in AWS accounts after several months of inactivity to ensure proper resource utilization and data security. Deleting resources means that all work will be lost and will need to be redone.
+

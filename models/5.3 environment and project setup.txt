@@ -1,0 +1,70 @@
+Configuring Your Project Environment
+Follow these steps to configure these required resources on the AWS platform.
+
+An AWS SageMaker IAM Role
+An AWS SageMaker Notebook Instance
+A GPU instance for fine-tuning training
+Download the project starter files(opens in a new tab
+
+You can start and stop the SageMaker Notebook Instance and your Jupyter Notebook Python files will be saved. Remember to stop your notebook instance when you are not using it.
+
+Ensure you are always working in the US-west-2 Region by checking and changing the region in the dropdown menu in the top of the AWS console to US West Oregon (us-west-2)
+
+Configuring an IAM Role for AWS SageMaker
+The first step is to make an IAM role you'll use throughout the project. This role will have all of the necessary permissions to run your Jupyter Notebook files, access AWS S3 Storage Buckets containing datasets, model deployment, and training jobs.
+
+Log into the AWS console using the "Launch Cloud Gateway" button in the course menu. Navigate to the Sagemaker home page(op
+In the left navigation menu, choose Role manager, and click on "Create a role"
+
+Screenshot of choosing the "create a role" button in the Role manager in AWS Sagemaker
+
+Name the Sagemaker role udacitySagemakerRole so you can identify it later. Configure the role with the following settings:
+Screenshot of the AWS Sagemaker role configuration with "SageMaker Compute Role" chosen for the role persona.
+
+Screenshot of IAM role configuration with all ML activities checked after "Access required AWS services"  up to "S3 full access" 
+Screenshot of IAM role configuration with all ML activities checked after "Access required AWS services" up to "S3 full access"
+
+In addition to the above pre-defined policies, attach the AmazonSageMakerFullAccess policy to the role you are creating.
+
+Screenshot of IAM role configuration adding AmazonSageMakerFullAccess to to the role
+Screenshot of IAM role configuration adding AmazonSageMakerFullAccess to to the role
+
+Validate the permissions in your role against these values to ensure you have assigned all the necessary permissions to complete the project.
+
+Screenshot of the final configuration of the Sagemaker IAM Role
+Screenshot of the final configuration of the Sagemaker IAM Role
+
+Creating an AWS SageMaker Notebook Instance
+The next step is to create an AWS SageMaker Notebook Instance you'll use throughout the project. You'll create the Python Jupyter notebook files for the project in this instance. You'll use the IAM role you created in step 1 for this notebook instance.
+
+An Amazon SageMaker Notebook instance is a EC2 virtual machine with the open-source Jupyter server installed The virtual machine costs money every hour it is running. Make sure you stop your notebook instance to stop the virtual machine when you're not using it so you don't run out of budget
+
+In the AWS console, navigate to the Sagemaker home page, and choose Notebook -> Notebook instances from the left navigation menu
+Click on "Create notebook instance" from the top of the page
+Name your notebook instance and ensure you choose the IAM Sagemaker role you created in Step 1 above.
+Screenshot from the AWS Sagemaker Notebook instance creation dialog with a custom name and choosing the Sagemaker role created above. 
+Screenshot from the AWS Sagemaker Notebook instance creation dialog with a custom name and choosing the Sagemaker role created above.
+
+Request a GPU Instance for Training
+You'll need to use an EC2 instance with a GPU to fine-tune the Meta Llama 2 7B model. Follow these instructions to visit the AWS Service Quotas dashboard and request a ml.g5.2xlarge instance for training job usage.
+
+Visit the AWS Service Quota Dashboard(opens in a new tab)
+In the AWS Services dropdown menu at the top of the page, choose or type Sagemaker, then click "View quotas" In the "Search by quota name" search box, enter ml.g5.2xlarge.
+Locate the row that says ml.g5.2xlarge for training job usage, and fill in the circle next to it.
+Click on the "Request increase at account-level" button at the top of the page, and enter 1 instances in the request form.
+Submit the request
+Screenshot of locating the ml.g5.2xlarge for training job usage row in the service quota dashboard for Sagemaker services. 
+Screenshot of the service quota request form increasing the ml.g5.2xlarge for training job usage request to 1 instance. 
+Screenshot of the service quota request form increasing the ml.g5.2xlarge for training job usage request to 1 instance.
+
+Verify your request was approved by visiting the Quota request history page(opens in a new tab)
+
+Screenshot of the AWS service quota request history page with the ml.g5.2xlarge for training job request approved. 
+Download the Project Starter Files
+These files contain they Python notebooks you'll use for the project and the Project Documentation Report. Project Starter Files(opens in a new tab)
+
+Using Your Own AWS Account
+You are free to use your own AWS account to complete this project. The project steps will be the same.
+
+You'll incur costs on your personal AWS account if you choose to use it for this project.
+You assume the responsibility for these costs if you choose to use your personal AWS account to complete the project.

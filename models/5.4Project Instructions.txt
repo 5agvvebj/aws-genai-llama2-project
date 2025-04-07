@@ -1,0 +1,54 @@
+Project Instructions
+Step 1: Upload Project Starter Files
+Start your SageMaker Notebook Instance by clicking on Open JupyterLab once your notebook instance is ready.
+
+Upload the 2 Python notebook files (.ipynb) in the project starter files(opens in a new tab) folder to JupyterLab using the upload arrow in the top left menu.
+
+Screenshot of Jupyterlab in the AWS Sagemaker Notebook interface showing the up arrow used to upload files into Jupyterlab in the top left navigation menu. 
+You should see two Jupyter Notebook files in the Jupyterlab file menu. Use the Python 3.10 Pytorch or Tensorflow Kernel to run code in these notebooks.
+
+Remember to stop your notebook instance when you stop or pause work on your project.
+Make sure to save your individual notebook files periodically in JupyterLab using the File -> Save menu, otherwise your work will be lost between your classroom Cloud Gateway sessions.
+If you don't see your notebook instance when logging back in, make sure your region is set to us-west-2
+Screenshot of choosing stop from the action menu of the AWS Sagemaker Notebook instance homepage. 
+Step 2: Choose your Dataset
+In the project notebook files, you'll have to make a choice of what type of domain expert you'd like your model to be. Your choices are:
+
+Financial domain
+IT domain
+Healthcare/Medical domain
+Fill out the domain you've selected in the Project Documentation Report
+
+Step 3: Deploy and Evaluate the model
+Complete and run the cells in the Model_Evaluation.ipynb file
+Take a screenshot of the Model_Evaluation.ipynb file with the cell output as proof you completed this step of the project
+Save and download your Model_Evaluation.ipynb with the cell output, you'll be submitting this file.
+Double check you've ran the cells that delete the model deployment and endpoint. Verify your model and endpoint have been deleted. If you do not delete these, you will run out of budget and will be unable to complete the next part of the project.
+Fill out the Project Documentation section about your evaluation of the model's text generation capabilities and knowledge.
+Step 4: Fine-tune the Model
+Complete and run the cells in the Model_FineTuning.ipynb file
+Download your Model_FineTuning.ipynb with the cell output, you'll be submitting this file.
+Take a screenshot of the Model_FineTuning.ipynb file with the cell output as proof you completed this step of the project
+Fill out the Project Documentation Report section about fine-tuning the model.
+Step 5: Deploy and Evaluate the Fine-tuned Model
+Visit the AWS S3 bucket where your fine-tuned model weights are stored after training and take a screenshot for your submission.
+Complete and run the cells in the Model_FineTuning.ipynb file about deploying and evaluating the fine-tuned model
+Take a screenshot of the Model_FineTuning.ipynb file with the cell output as proof you completed this step of the project
+Double check you've ran the cells that delete the model deployment and endpoint. Verify your model and endpoint have been deleted. If you do not delete these, you will run out of budget and will be unable to complete the project.
+Fill out the Project Documentation Report section about your evaluation of the fine-tuned model's text generation capabilities and knowledge.
+Step 6: Collect Project Documentation and Submit
+Revisit the project assessment rubric(opens in a new tab) and verify you've completed all of the project requirements and have collected all of the necessary files, proof, and documentation you need to submit the project
+Model_evaluation.ipynb with cell output
+Model_FineTuning.ipynb will cell output
+Screenshots of both notebooks with cell output
+The completed Project Documentation Report
+Submission Instructions
+Place all of your project files in one folder and zip the folder.
+
+Follow the submission instructions on the next page to upload your zipped folder containing your project.
+
+Instructions Summary
+Complete the project steps above
+Collect all supporting project files and screenshots
+Fill out the documentation file
+Check the rubric(opens in
